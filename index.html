@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon-grafico/android-chrome-192x192.png" type="image/x-icon">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+          <h1>CALCULADORA IMC</h1>
+          <p>Insira os valores a seguir:</p>
+        </header>
+        
+        <div class="container">
+          <h2>Peso</h2> <input id="peso" type="text"> <label for="peso">Kg</label>
+          
+          <h2>Altura</h2> <input id="altura" type="text"> <label for="altura">cm</label>
+          <br>
+          <div id="button"><button onClick="calcularImc()">Calcular</button></div>
+        </div>
+        
+        <div class="resultado">
+          <h2 id="seu-imc"><span id="resultado-imc"></span></h2>
+          <h2 id="resultado-tipo"></h2>
+        </div>
+        </div>
+        <footer>Desenvolvido com carinho por Marta Almeida</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
